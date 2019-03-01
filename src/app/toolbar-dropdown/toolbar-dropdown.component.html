@@ -1,0 +1,7 @@
+<div class="toolbar-dropdown">
+  <form>
+    <select name="item" (change)="onListChange($event.target.value)">
+      <option [value]="item.id" *ngFor="let item of list">{{item.val}}</option>
+    </select>
+  </form>
+</div>

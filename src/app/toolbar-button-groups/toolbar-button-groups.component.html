@@ -1,0 +1,3 @@
+<div class="toolbar-button-groups">
+  <app-toolbar-button-state *ngFor="let item of list" [initialState]="item.state" [title]="item.label" (buttonClick)="onButtonSelected($event, item)"></app-toolbar-button-state>
+</div>
